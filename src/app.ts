@@ -3,6 +3,7 @@ import loginController from './controllers/LoginControllers';
 import createUserController from './controllers/UserControllers';
 import classeValid from './middlewares/ClasseMiddlewares';
 import levelValid from './middlewares/LevelMiddlewares';
+import loginValid from './middlewares/LoginMiddlewares';
 import passwordValid from './middlewares/PasswordMiddlewares';
 import userNameValid from './middlewares/UserMiddlewares';
 
@@ -18,6 +19,11 @@ app.route('/users').post(
   createUserController,
 );
 
-app.route('/login').post(loginController);
+app.route('/login').post(
+  userNameValid,
+  passwordValid,
+  loginValid,
+  loginController,
+);
 
 export default app;
