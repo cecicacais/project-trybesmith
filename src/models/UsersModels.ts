@@ -1,6 +1,6 @@
 import { ResultSetHeader } from 'mysql2';
 import connection from './connection';
-import { User } from '../interfaces/user';
+import { User, UserId } from '../interfaces/user';
 
 const createUserModel = async (user: User) => {
   const { username, classe, level, password } = user;
@@ -17,4 +17,18 @@ const createUserModel = async (user: User) => {
   return newUserId;
 };
 
-export default createUserModel;
+const searchUserModel = async (username: string): Promise<UserId> => {
+  const [user] = await connection.execute(
+    'SELECT * FROM Trybesmith.Users WHERE username=?',
+    [username],
+  );
+
+  const [userLogin] = user as UserId[];
+
+  return userLogin;
+};
+
+export {
+  createUserModel,
+  searchUserModel,
+};

@@ -1,4 +1,5 @@
 import express from 'express';
+import loginController from './controllers/LoginControllers';
 import createUserController from './controllers/UserControllers';
 import classeValid from './middlewares/ClasseMiddlewares';
 import levelValid from './middlewares/LevelMiddlewares';
@@ -16,5 +17,7 @@ app.route('/users').post(
   levelValid,
   createUserController,
 );
+
+app.route('/login').post(loginController);
 
 export default app;

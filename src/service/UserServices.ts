@@ -1,4 +1,4 @@
-import createUserModel from '../models/UsersModels';
+import { createUserModel } from '../models/UsersModels';
 import { User } from '../interfaces/user';
 
 const createUserService = async (user: User) => {
