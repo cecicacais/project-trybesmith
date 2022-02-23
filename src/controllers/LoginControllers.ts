@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import StatusCode from '../enums/statusCode';
 import loginService from '../service/LoginServices';
-import tokenCreate from '../token/Token';
+import { tokenCreate } from '../token/Token';
 
 const loginController = async (req: Request, res: Response) => {
   const user = req.body;

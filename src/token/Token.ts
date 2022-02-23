@@ -17,4 +17,7 @@ const tokenCreate = async (id: number, username: string) => {
   return token;
 };
 
-export default tokenCreate;
+export {
+  tokenCreate,
+  jwtOptions,
+};

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import createUserService from '../service/UserServices';
-import tokenCreate from '../token/Token';
+import { tokenCreate } from '../token/Token';
 import StatusCode from '../enums/statusCode';
 
 const createUserController = async (req: Request, res: Response) => {
