@@ -1,6 +1,7 @@
 import express from 'express';
 import loginController from './controllers/LoginControllers';
-import createProductController from './controllers/ProductsController';
+import { createProductController,
+  getAllProductController } from './controllers/ProductsController';
 import createUserController from './controllers/UserControllers';
 import amountValid from './middlewares/AmountMiddlewares';
 import classeValid from './middlewares/ClasseMiddlewares';
@@ -35,6 +36,10 @@ app.route('/products').post(
   amountValid,
   nameValid,
   createProductController,
-);
+)
+  .get(
+    tokenValid,
+    getAllProductController,
+  );
 
 export default app;
