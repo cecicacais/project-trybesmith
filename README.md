@@ -5,9 +5,9 @@
 ## Como executar o projeto
 
 1. Clone o repositorio no seu computador:
-  - `git clone ....`
+  - `git clone git@github.com:cecicacais/project-trybesmith.git`
   - Entre na pasta do repositorio clonado:
-    - `cd ...`
+    - `cd project-trybesmith`
 
 2. Instale as dependências:
   - `npm install`
