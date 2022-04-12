@@ -10,11 +10,7 @@ const createUserModel = async (user: User) => {
     (?, ?, ?, ?)
     `, [username, classe, level, password]);
 
-  const { insertId } = newUser;
-
-  const newUserId = { username, id: insertId };
-
-  return newUserId;
+  return newUser.insertId;
 };
 
 const searchUserModel = async (username: string): Promise<UserId> => {
