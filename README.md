@@ -32,7 +32,8 @@
   - MySQL Workbench: Para criação do banco de dados, pode estar copiando o arquivo Trybesmith.sql;
   - Thunder Client: Uma extensão do Visual Studio Code, para fazer as requisições no banco de dados;
 
-## Referências:
+## Referências
+
 1. Arquivo Trybesmith.sql
   - Foi disponibilizado pela Trybe, para criação do banco de dados inicial do projeto.
 
