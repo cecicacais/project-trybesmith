@@ -8,12 +8,12 @@
 
 ## Como executar o projeto
 
-1. Clone o repositorio no seu computador:
+1. Clone o repositorio no seu computador
   - `git clone git@github.com:cecicacais/project-trybesmith.git`
   - Entre na pasta do repositorio clonado:
     - `cd project-trybesmith`
 
-2. Instale as dependências:
+2. Instale as dependências
   - `npm install`
 
 3. Crie as variaveis de ambiente:
@@ -28,7 +28,7 @@
   - `npm start` - ou
   - `npm run dev`
 
-## Sugestão de ferramentas:
+## Sugestão de ferramentas
   - MySQL Workbench: Para criação do banco de dados, pode estar copiando o arquivo Trybesmith.sql;
   - Thunder Client: Uma extensão do Visual Studio Code, para fazer as requisições no banco de dados;
 
