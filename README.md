@@ -2,7 +2,7 @@
  O objetivo desse projeto é desenvolver um CRUD (Create, Read, Update, Delete) de itens medievais, no formato de uma API, utilizando Typescript.
  Através de alguns endpoints criados para ler e escrever em um banco de dados, utilizando o MySQL.
  
-### Exemplo de uma requisição feita no endpoint /users com o método HTTP post:
+#### Exemplo de uma requisição feita no endpoint /users com o método HTTP post:
 <p align="center">
 <img src="/assets/trybesmith.gif">
 </p>
